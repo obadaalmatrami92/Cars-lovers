@@ -1,6 +1,6 @@
 
 var driver = prompt("when the first human Drive a car ?");
-if(driver === "obada"){
+if(driver === "1992"){
   confirm("correct answer");
 }else{
   confirm("sorry try again");
