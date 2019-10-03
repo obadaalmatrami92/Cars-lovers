@@ -10,4 +10,29 @@ if(driver === "1992"){
   alert("correct answer");
 }
 
+var showorder=function(){
+  var userorder = prompt ('what  would you like to order, bmw or audi  ');
+  var orderImage = '';
+  var numberofImages
+  while (userorder != 'bmw' && userorder !== 'audi')
+  {
+   userorder = prompt ('please bmw or audi');
+  }
+  numberofImages = prompt('how many images do you want ?');
+  for (let i = 0; i < numberofImages; i++)
+  {
+    if (userorder === 'bmw')
+    { 
+      orderImage += '<img src="images/2018-bmw-m4-cs.jpg">';
+    }
+    else if (userorder === 'audi')
+     {
+      orderImage = orderImage + '<img src="images/images1.jpg">';
+    } 
+  
 
+}
+
+  return orderImage;
+
+};
